@@ -15,6 +15,9 @@
 		9CA3FAC11D99BE6900241AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3FABF1D99BE6900241AE1 /* LaunchScreen.storyboard */; };
 		9CA3FAC91D99BE7600241AE1 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA3FAC81D99BE7600241AE1 /* CoreMotion.framework */; };
 		9CA3FACB1D99C08A00241AE1 /* clownfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3FACA1D99C08A00241AE1 /* clownfish.jpg */; };
+		9CA3FACD1D99CBE200241AE1 /* glass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3FACC1D99CBE200241AE1 /* glass.jpg */; };
+		9CA3FACF1D99CBEB00241AE1 /* abstract.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3FACE1D99CBEB00241AE1 /* abstract.jpg */; };
+		9CA3FAD11D99CC3300241AE1 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3FAD01D99CC3300241AE1 /* sample.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		9CA3FAC21D99BE6900241AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA3FAC81D99BE7600241AE1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		9CA3FACA1D99C08A00241AE1 /* clownfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = clownfish.jpg; path = "../../scrollViewDemo/scrollViewDemo/Assets.xcassets/clownfish-1024x1024-diving-red-sea-coral-worlds-best-diving-sites-4085.imageset/clownfish.jpg"; sourceTree = "<group>"; };
+		9CA3FACC1D99CBE200241AE1 /* glass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = glass.jpg; path = ../../../../Downloads/glass.jpg; sourceTree = "<group>"; };
+		9CA3FACE1D99CBEB00241AE1 /* abstract.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = abstract.jpg; path = ../../../../Downloads/abstract.jpg; sourceTree = "<group>"; };
+		9CA3FAD01D99CC3300241AE1 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample.jpg; path = "../../hypno copy/hypno/Assets.xcassets/G.imageset/sample.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				9CA3FABD1D99BE6800241AE1 /* Assets.xcassets */,
 				9CA3FABF1D99BE6900241AE1 /* LaunchScreen.storyboard */,
 				9CA3FAC21D99BE6900241AE1 /* Info.plist */,
+				9CA3FACC1D99CBE200241AE1 /* glass.jpg */,
+				9CA3FACE1D99CBEB00241AE1 /* abstract.jpg */,
+				9CA3FAD01D99CC3300241AE1 /* sample.jpg */,
 				9CA3FACA1D99C08A00241AE1 /* clownfish.jpg */,
 				9CA3FAB11D99BE6800241AE1 /* Supporting Files */,
 			);
@@ -146,8 +155,11 @@
 			files = (
 				9CA3FAC11D99BE6900241AE1 /* LaunchScreen.storyboard in Resources */,
 				9CA3FACB1D99C08A00241AE1 /* clownfish.jpg in Resources */,
+				9CA3FACD1D99CBE200241AE1 /* glass.jpg in Resources */,
 				9CA3FABE1D99BE6800241AE1 /* Assets.xcassets in Resources */,
 				9CA3FABC1D99BE6800241AE1 /* Main.storyboard in Resources */,
+				9CA3FAD11D99CC3300241AE1 /* sample.jpg in Resources */,
+				9CA3FACF1D99CBEB00241AE1 /* abstract.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
