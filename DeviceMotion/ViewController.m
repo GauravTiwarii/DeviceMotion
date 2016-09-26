@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+@import CoreMotion;
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (strong,nonatomic)CMMotionManager *manager;
 
 @end
 
@@ -16,12 +21,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.manager = [[CMMotionManager alloc]init];
+    
+    self.imageView.image =[UIImage imageNamed:@"clownfish.jpg"];
+    [self.manager startDeviceMotionUpdates];
+    
+    self.manager.accelerometerUpdateInterval = 0.01;
+    
+    ViewController* __weak weakSelf = self;
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    [self.manager startDeviceMotionUpdatesToQueue:queue withHandler:^(CMDeviceMotion *motionData, NSError *error) {
+        
+        double x= motionData.gravity.x;
+        double y = motionData.gravity.y;
+        //double z = motionData.gravity.z;
+        
+        double rotation = -atan2(x, -y);
+        
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            
+            weakSelf.imageView.transform = CGAffineTransformMakeRotation(rotation);
+            
+            
+        }];
+        
+    }];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
 
 @end
